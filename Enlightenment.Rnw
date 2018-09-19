@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\begin{document}
+
+Hello World!
+
+$$\bar{X} = \sum_{i=1}^{n} \frac{x}{n}$$
+
+<<>>=
+ages <- c(45, 72, 91, 86, 85, 81, 64)
+mean(ages)
+sd(ages)
+@
+
+<<echo = FALSE, fig.width = 4, fig.height = 4, fig.align = "center", dev = "tikz">>=
+boxplot(ages, col = "purple", main = "Boring Boxplot $\\aplha + \\beta$")
+@
+
+Ryan wants to know how statisticians spell.
+
+The average of the ages is \Sexpr{round(mean(ages),2)}.
+
+\end{document}
